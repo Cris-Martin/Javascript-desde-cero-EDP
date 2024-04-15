@@ -1,18 +1,19 @@
 function primerElemento(arg){
     //dado el array pasado por parametro, tendras que devolver el primer elemento
     // tu código:
-
+    return array[0];
 }
 
 function ultimoElemento(arg){
     //dado el array pasado por parametro, tendras que devolver el ultimo elemento
     // tu código aqui:
-
+    return array[array.length - 1];
 }
 
 function nuevoArray(arg){
     //dado el array pasado por parametro retorna su longitud
     // tu código aqui:
+    return array.length;
 
 }
 
@@ -21,6 +22,9 @@ function changeArray(arr){
     //el ultimo elemento por 'array'
     //retorna el nuevo valor
     // tu código aqui:
+    array[0] = 'Aprendiendo';
+    array[array.length - 1] = 'array';
+    return array;
 
 }
 
@@ -31,28 +35,52 @@ function primerasCondicionales(arg){
     // longitud de array menor que 3 retornar: 'Este array es menor a 3'
     // longitud de array igual a 0 retornar: 'Este array no contiene elementos'
     // tu código aqui:
-    
+    if (array.length > 3) {
+        return 'Este array es mayor a 3';
+    } else if (array.length === 3) {
+        return 'Este array es igual a 3';
+    } else if (array.length < 3 && array.length !== 0) {
+        return 'Este array es menor a 3';
+    } else if (array.length === 0) {
+        return 'Este array no contiene elementos';
+    }
 }
 
 function sumandoEnUno(arg){
     // dado el array de numeros enteros pasado por parametro, a cada elemento del array
     // tienes que sumarle 1.. ejemplo: [4 , 5, 6] -> [5 , 6, 7] 
     // tu código aqui:
-
+    for (let i = 0; i < array.length; i++) {
+        array[i] = array[i] + 1;
+    }
+    return array;
 }
 
 function valorMaximo(arr){
     //Se pasa un array de enteros, tendras que iterar por cada elemeto del array y encontrar el valor más alto y devolverlo
     //ejemplo -> [1 , 5, 4, 10, 99 ,2, 42, 3] - deberia devolver 99
     // Tu codigo:
-
+    let maximo = array[0];
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] > maximo) {
+            maximo = array[i];
+        }
+    }
+    return maximo;
 }
 
 function valorMinimo(arr){
     //Se pasa un array de enteros, tendras que iterar por cada elemeto del array y encontrar el valor más bajo y devolverlo
     //ejemplo -> [ 5, 4, 10, 99 ,2, 42, 3] - deberia devolver 2
     // Tu codigo:
+    let minimo = array[0]; 
 
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] < minimo) {
+            minimo = array[i];
+        }
+    }
+    return minimo;
 }
 
 function cantPares(arr){
