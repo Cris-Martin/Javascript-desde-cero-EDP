@@ -112,16 +112,16 @@ switch (numeroDia) {
 // Si la antigüedad es mayor o igual a 5 años, y el salario es menor a $500,
 // el programa debe imprimir un mensaje que indique que el empleado es elegible para una bonificación del 10% de su salario actual.
 // Tu codigo 👇:
-var antiguedad = prompt("Ingresa tu antigüedad en años en la empresa:");
+let antiguedad = prompt("Ingresa tu antigüedad en años en la empresa:");
 
 antiguedad = parseInt(antiguedad);
 
-var salario = prompt("Ingresa tu salario actual:");
+let salario = prompt("Ingresa tu salario actual:");
 
 salario = parseFloat(salario);
 
 if (antiguedad >= 5 && salario < 500) {
-    var bonificacion = salario * 0.10;
+    let bonificacion = salario * 0.10;
 
     console.log("¡Felicidades! Eres elegible para una bonificación del 10% de tu salario actual.");
     console.log("Monto de la bonificación: $" + bonificacion.toFixed(2)); // Redondear el monto de la bonificación a 2 decimales

@@ -1,6 +1,20 @@
 function cantidadDeVocales(phrase){
 // Cuenta la cantidad de vocales en la frase pasada por parametros utilizando un bucle for
 // Tu código:👇
+frase = frase.toLowerCase();
+
+let contador = 0;
+
+let vocales = ['a', 'e', 'i', 'o', 'u'];
+
+for (let i = 0; i < frase.length; i++) {
+    if (vocales.includes(frase[i])) {
+        contador++;
+    }
+}
+
+return contador;
+
 
 }
 
