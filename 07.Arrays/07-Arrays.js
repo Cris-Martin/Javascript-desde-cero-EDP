@@ -1,3 +1,5 @@
+const { array } = require("yargs");
+
 function primerElemento(arg){
     //dado el array pasado por parametro, tendras que devolver el primer elemento
     // tu código:
@@ -87,6 +89,14 @@ function cantPares(arr){
     //Se para un array de enteros, tienes que iterar por los elementos y contar la cantidad de numeros que son pares
     // devolver la cantidad de pares total. Ejemplo: [1,2,3,4,5,6,7,8,9] -> 4
     // Tu codigo:
+    let cantidadPares = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] % 2 === 0) {
+            cantidadPares++;
+        }
+    }
+    return cantidadPares;
+
 
 }
 
@@ -94,13 +104,14 @@ function eliminarDuplicado(arr){
     // Se para un array de enteros, tienes que iterar por los elementos y eliminar los duplicados, y devolver el array nuevo sin duplicado.
     // ejemplo: [1,1,2,4,5,6,6,7,1,8,9] -> [1,2,4,5,6,7,8,9]
     // Tu codigo:
-    
+    return Array.from(new Set(array));
 }
 
 function enOrden(arr, ascendente = true){
     //Se para un array de enteros de forma desordenada, tendras que devolver el mismo array pero de forma ordenada
     //de menor a mayor. ejemplo -> [7, 2, 4, 6, 1, 3, 5] -> [1, 2, 3, 4, 5, 6, 7]
     //Tu codigo:
+    return array.sort((a, b) => a - b);{
 
 }
 
@@ -108,12 +119,28 @@ function dosEnUno(arr1, arr2){
     //Escribe una función que reciba dos arrays y devuelva un nuevo array que contenga todos los elementos de ambos arrays, sin duplicados.
     //Tu codigo:
     // return arr1.concat(arr2);
+    const conjunto = new Set([...arr1, ...arr2]);
+    return Array.from(conjunto);
 
 }
 
 function matrizTranspuesta(matriz){
     //Escribe una función que reciba una matriz (array de arrays) y devuelva la matriz transpuesta, es decir, intercambiando filas por columnas.
     //Tu codigo:
+    const filas = matriz.length;
+    const columnas = matriz[0].length;
+
+    const matrizTranspuesta = [];
+
+    for (let j = 0; j < columnas; j++) {
+        matrizTranspuesta[j] = [];
+        for (let i = 0; i < filas; i++) {
+            matrizTranspuesta[j].push(matriz[i][j]);
+        }
+    }
+
+    return matrizTranspuesta;
+}
 
 }
 
