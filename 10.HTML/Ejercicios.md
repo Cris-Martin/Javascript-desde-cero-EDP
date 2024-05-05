@@ -23,3 +23,62 @@
         
         
 4. En el pie de página, agrega tus datos de contacto, como tu dirección de correo electrónico y enlaces a tus redes sociales o perfiles profesionales (por ejemplo, LinkedIn, GitHub, Behance, etc.).
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mi Portfolio</h1>
+    <h2>Desarrollador Web</h2>
+</header>
+
+<main>
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>Soy estudiante de CS y actualmente me encuentro aprendiendo Javascript, con intenciones de seguir aprendiendo lo que mas pueda y superarme.</p>
+    </section>
+    // completar section entre semana, ir pensando en estos dias con que llenar 
+    //experiencia laboral
+    //educacion
+    //habilidades
+    //proyectos
+    
+    
+</main>
+
+<footer>
+    <p>Contacto: crismartin236@gmail.com</p>
+    <p>Redes sociales: <a href="#">LinkedIn: pensando como compartir el link </a>, <a href="#">GitHub</a></p>
+</footer>
+
+</body>
+</html>
