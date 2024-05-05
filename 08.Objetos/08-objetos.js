@@ -2,7 +2,12 @@
 // Completa el siguiente objeto 'alumnos' que tenga como primera propiedad nombre, segunda propiedad apellido, tercera edad y cuarta examen
 // nombre y apellido deben tener como valor un string, edad un entero y examen un booleano.
 // Tu código:
-let alumnos = {}
+let alumnos = {
+    nombre: "Cristian",
+  apellido: "Martin",
+  edad: 20,
+  examen: true
+}
 
 
 function datosObj(obj){
@@ -14,6 +19,7 @@ function datosObj(obj){
     const nombre = obj.nombre;
     const apellido = obj.apellido;
     return `Bienvenido ${nombre} ${apellido}`;
+
 }
 
 function cambiandoPropiedades(obj){
@@ -84,3 +90,4 @@ module.exports = {
     libro,
     mostrarInformacionLibro
   };
+}
