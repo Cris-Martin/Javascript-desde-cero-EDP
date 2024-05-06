@@ -11,3 +11,21 @@ Ejemplo:
 
 ![Captura de pantalla 2023-08-06 214837.png](./img/Captura%20de%20pantalla%202023-08-06%20214837.png)
 ¡Buena suerte!
+
+const chatBox = document.getElementById('chat-box');
+const chatForm = document.getElementById('chat-form');
+const userInput = document.getElementById('user-input');
+
+const preguntasRespuestas = {
+    'es': {
+        'Hola': '¡Hola! ¿En qué puedo ayudarte?',
+        'Cómo estás': 'Estoy bien, gracias por preguntar.',
+        'Adiós': '¡Hasta luego!'
+    },
+    'en': {
+        'Hello': 'Hello! How can I help you?',
+        'How are you': 'I\'m fine, thank you for asking.',
+        'Goodbye': 'Goodbye! See you later!'
+    }
+};
+const idiomaActual = ´es´;
