@@ -3,35 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Mi Primer ChatBot</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Título de la página</h1>
+        <h1>Bienvenido</h1>
+        <h3>Hola! Soy un ChatBot, en qué puedo ayudarte?</h3>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section>
-            <h2>Sección 1</h2>
-            <p>Contenido de la sección 1.</p>
-        </section>
-
-        <section>
-            <h2>Contenido de la sección 1.</h2>
-        </section>
-    </main>
-
+    <div class="chat-avatar">
+        <img src="./chatbot.jpg" alt="cara azul">  
+    </div> 
+    <div class="chat-container">
+    
+      
+              
+        <div class="chat-box" id="chat-box"></div>
+        <form id="chat-form">
+            <input type="text" id="user-input" placeholder="Escribe un mensaje...">
+            <button type="submit">Enviar</button>
+        </form>
+     </div>
+     
     <footer>
-        <p>Pie de pagina (aun no pienso en algo concreto)</p>
+        <p>Gracias por probar mi Primer ChatBot</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

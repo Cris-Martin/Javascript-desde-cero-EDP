@@ -1,78 +1,77 @@
-
-* {
-    margin: 10;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+     background-color: #ffffff;
     padding: 0;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+/*
+#language-options {
+    margin-bottom: 20px;
 }
 
+#language-options label {
+    margin-right: 10px;
+}
 
-/* contenedor del chatbot */
+#language-select {
+    padding: 5px;
+}
+
+NO PUEDO CAMBIAR DE LENGUAJE A LA HORA DE QUE EL USAURIO ESCOJA
+*/
+
+
 .chat-container {
-    width: 350px;
-    border: 1px solid #ced4da;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 50px auto;
+    border: 1px solid #7268a1;
+    border-radius: 5px;
+    padding: 20px;
 }
+.chat-avatar {
+    width: 20%; 
+    height: 1px; 
+object-fit: cover;}
 
-/* estilos para el área de chat */
+
+
 .chat-box {
-    height: 300px;
-    overflow-y: scroll;
-    padding: 10px;
-    background-color: #f8f9fa;
-}
-
-/* estilos para los mensajes */
-.mensaje-usuario, .mensaje-chatbot {
-    max-width: 80%;
+    height: 200px;
+    overflow-y: auto;
+    border-bottom: 1px solid #898989;
     margin-bottom: 10px;
-    padding: 8px 12px;
-    border-radius: 20px;
 }
 
-.mensaje-usuario {
-    background-color: #007bff;
-    color: #fff;
-    align-self: flex-end;
-}
-
-.mensaje-chatbot {
-    background-color: #dee2e6;
-    color: #212529;
-    align-self: flex-start;
-}
-
-/* Estilos para el formulario */
 #chat-form {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #e9ecef;
 }
 
 #user-input {
     flex: 1;
-    padding: 8px;
-    border: none;
-    border-radius: 20px;
-    outline: none;
+    margin-right: 10px;
 }
 
-#user-input:focus {
-    border: 1px solid #007bff;
-}
-
-#chat-form button {
+button {
     padding: 8px 16px;
-    border: none;
-    border-radius: 20px;
     background-color: #007bff;
     color: #fff;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-#chat-form button:hover {
+button:hover {
     background-color: #0056b3;
+}
+footer {
+    text-align: center; 
+    padding: 10px;
+    background-color: #ffffff;
+    border-top: 1px solid #646464;
 }
